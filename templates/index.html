@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语学习助手</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #0071e3;
+            --primary-hover: #0077ED;
+            --primary-active: #005BBB;
+            --background: #ffffff;
+            --card-background: #ffffff;
+            --text-main: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --border-color: #d2d2d7;
+            --success-color: #34c759;
+            --warning-color: #ff9500;
+            --error-color: #ff3b30;
+            --progress-bg: #f2f2f7;
+            --shadow: rgba(0, 0, 0, 0.12);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .app-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .app-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #007AFF, #5856D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .app-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            color: var(--primary-color);
+        }
+        
+        .feature-details h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .feature-details p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--background);
+            appearance: none;
+            color: var(--text-main);
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41.59L6 5.17 10.59.59 12 2 6 8 0 2z' fill='%236e6e73'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: calc(100% - 1rem) center;
+            background-size: 12px;
+            transition: border-color 0.2s;
+        }
+        
+        select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+        
+        .file-upload {
+            position: relative;
+            width: 100%;
+            min-height: 120px;
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        
+        .file-upload:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .file-upload input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .upload-content {
+            padding: 1.5rem;
+            width: 100%;
+        }
+        
+        .upload-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .upload-text {
+            font-weight: 500;
+        }
+        
+        .upload-hint {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+        
+        .file-info {
+            display: none;
+            width: 100%;
+            padding: 1rem;
+            background: #f5f5f7;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        
+        .file-info.active {
+            display: block;
+        }
+        
+        .file-name {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .file-size {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: var(--primary-color);
+            color: white;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+        
+        .btn:active {
+            background-color: var(--primary-active);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .btn-secondary {
+            background-color: #f5f5f7;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e5e5ea;
+        }
+        
+        .progress-container {
+            margin-top: 1.5rem;
+            display: none;
+        }
+        
+        .progress-container.active {
+            display: block;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background-color: var(--progress-bg);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: var(--primary-color);
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .progress-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .result-container {
+            margin-top: 1.5rem;
+            display: none;
+        }
+        
+        .result-container.active {
+            display: block;
+        }
+        
+        .result-message {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .error-container {
+            margin-top: 1.5rem;
+            display: none;
+        }
+        
+        .error-container.active {
+            display: block;
+        }
+        
+        .error-message {
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #ffebee;
+            color: #c62828;
+            border-left: 4px solid #c62828;
+        }
+        
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .level-option {
+            position: relative;
+        }
+        
+        .level-option input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .level-label {
+            display: block;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .level-option input:checked + .level-label {
+            border-color: var(--primary-color);
+            background-color: rgba(0, 113, 227, 0.05);
+            box-shadow: 0 0 0 2px var(--primary-color);
+        }
+        
+        .level-name {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .level-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .app-title {
+                font-size: 2rem;
+            }
+            
+            .app-subtitle {
+                font-size: 1rem;
+            }
+            
+            .card-header, .card-body {
+                padding: 1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="app-title">英语学习助手</h1>
+            <p class="app-subtitle">AI驱动的英语文档标注工具，帮助您更高效地学习英语</p>
+        </header>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">功能介绍</h2>
+            </div>
+            <div class="card-body">
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">📚</div>
+                        <div class="feature-details">
+                            <h3>难词标注</h3>
+                            <p>自动识别文档中的难词，并提供中英文释义</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📝</div>
+                        <div class="feature-details">
+                            <h3>中文导读</h3>
+                            <p>生成文章的中文导读，帮助理解文章内容</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔍</div>
+                        <div class="feature-details">
+                            <h3>结构分析</h3>
+                            <p>分析文章结构，提供摘要和框架</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-details">
+                            <h3>个性化标注</h3>
+                            <p>根据您的英语水平，提供个性化的标注</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">开始使用</h2>
+            </div>
+            <div class="card-body">
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label>选择您的英语水平</label>
+                        <div class="levels-grid">
+                            <div class="level-option">
+                                <input type="radio" name="level" id="level-beginner" value="初级" checked>
+                                <label for="level-beginner" class="level-label">
+                                    <div class="level-name">初级</div>
+                                    <div class="level-desc">基础英语学习者</div>
+                                </label>
+                            </div>
+                            <div class="level-option">
+                                <input type="radio" name="level" id="level-cet4" value="四级">
+                                <label for="level-cet4" class="level-label">
+                                    <div class="level-name">四级</div>
+                                    <div class="level-desc">大学英语四级水平</div>
+                                </label>
+                            </div>
+                            <div class="level-option">
+                                <input type="radio" name="level" id="level-cet6" value="六级">
+                                <label for="level-cet6" class="level-label">
+                                    <div class="level-name">六级</div>
+                                    <div class="level-desc">大学英语六级水平</div>
+                                </label>
+                            </div>
+                            <div class="level-option">
+                                <input type="radio" name="level" id="level-ielts" value="雅思">
+                                <label for="level-ielts" class="level-label">
+                                    <div class="level-name">雅思</div>
+                                    <div class="level-desc">雅思考试水平</div>
+                                </label>
+                            </div>
+                            <div class="level-option">
+                                <input type="radio" name="level" id="level-toefl" value="托福">
+                                <label for="level-toefl" class="level-label">
+                                    <div class="level-name">托福</div>
+                                    <div class="level-desc">托福考试水平</div>
+                                </label>
+                            </div>
+                            <div class="level-option">
+                                <input type="radio" name="level" id="level-advanced" value="高级">
+                                <label for="level-advanced" class="level-label">
+                                    <div class="level-name">高级</div>
+                                    <div class="level-desc">接近母语水平</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>上传英语文档</label>
+                        <div class="file-upload" id="file-upload-area">
+                            <div class="upload-content">
+                                <div class="upload-icon">📄</div>
+                                <div class="upload-text">点击或拖拽文件到此处</div>
+                                <div class="upload-hint">支持 PDF、DOCX 格式，最大 10MB</div>
+                            </div>
+                            <input type="file" id="file-input" accept=".pdf,.docx">
+                        </div>
+                        
+                        <div class="file-info" id="file-info">
+                            <div class="file-name" id="file-name">document.pdf</div>
+                            <div class="file-size" id="file-size">1.2 MB</div>
+                        </div>
+                    </div>
+                    
+                    <button type="button" id="upload-btn" class="btn" disabled>开始处理</button>
+                    
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="progress-status">正在处理...</span>
+                            <span id="progress-percent">0%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="result-container" id="result-container">
+                        <div class="result-message">
+                            文档处理完成！您可以下载标注后的文档。
+                        </div>
+                        <button type="button" id="download-btn" class="btn">下载标注文档</button>
+                    </div>
+                    
+                    <div class="error-container" id="error-container">
+                        <div class="error-message" id="error-message">
+                            处理文档时出错，请稍后再试。
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 文件上传处理
+        const fileInput = document.getElementById('file-input');
+        const fileUploadArea = document.getElementById('file-upload-area');
+        const fileInfo = document.getElementById('file-info');
+        const fileName = document.getElementById('file-name');
+        const fileSize = document.getElementById('file-size');
+        const uploadBtn = document.getElementById('upload-btn');
+        const progressContainer = document.getElementById('progress-container');
+        const progressFill = document.getElementById('progress-fill');
+        const progressStatus = document.getElementById('progress-status');
+        const progressPercent = document.getElementById('progress-percent');
+        const resultContainer = document.getElementById('result-container');
+        const downloadBtn = document.getElementById('download-btn');
+        const errorContainer = document.getElementById('error-container');
+        const errorMessage = document.getElementById('error-message');
+        
+        let currentTaskId = null;
+        let downloadUrl = null;
+        
+        // 文件拖拽处理
+        fileUploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileUploadArea.style.borderColor = 'var(--primary-color)';
+        });
+        
+        fileUploadArea.addEventListener('dragleave', () => {
+            fileUploadArea.style.borderColor = 'var(--border-color)';
+        });
+        
+        fileUploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileUploadArea.style.borderColor = 'var(--border-color)';
+            
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                handleFileSelect();
+            }
+        });
+        
+        // 文件选择处理
+        fileInput.addEventListener('change', handleFileSelect);
+        
+        function handleFileSelect() {
+            if (fileInput.files.length) {
+                const file = fileInput.files[0];
+                
+                // 检查文件类型
+                const fileExt = file.name.split('.').pop().toLowerCase();
+                if (fileExt !== 'pdf' && fileExt !== 'docx') {
+                    showError('不支持的文件格式，请上传 PDF 或 DOCX 文件');
+                    fileInput.value = '';
+                    return;
+                }
+                
+                // 检查文件大小
+                if (file.size > 10 * 1024 * 1024) {
+                    showError('文件太大，请上传小于 10MB 的文件');
+                    fileInput.value = '';
+                    return;
+                }
+                
+                // 显示文件信息
+                fileName.textContent = file.name;
+                fileSize.textContent = formatFileSize(file.size);
+                fileInfo.classList.add('active');
+                uploadBtn.disabled = false;
+                
+                // 隐藏错误信息
+                errorContainer.classList.remove('active');
+            }
+        }
+        
+        // 格式化文件大小
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+        }
+        
+        // 上传按钮点击处理
+        uploadBtn.addEventListener('click', () => {
+            if (!fileInput.files.length) return;
+            
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            
+            // 获取选中的英语水平
+            const levelRadios = document.getElementsByName('level');
+            let selectedLevel = '四级';
+            for (const radio of levelRadios) {
+                if (radio.checked) {
+                    selectedLevel = radio.value;
+                    break;
+                }
+            }
+            formData.append('level', selectedLevel);
+            
+            // 显示进度条
+            progressContainer.classList.add('active');
+            progressFill.style.width = '0%';
+            progressStatus.textContent = '正在上传...';
+            progressPercent.textContent = '0%';
+            
+            // 隐藏结果和错误
+            resultContainer.classList.remove('active');
+            errorContainer.classList.remove('active');
+            
+            // 禁用上传按钮
+            uploadBtn.disabled = true;
+            
+            // 发送上传请求
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || '上传失败');
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    currentTaskId = data.task_id;
+                    progressStatus.textContent = '文件已上传，正在处理...';
+                    progressFill.style.width = '10%';
+                    progressPercent.textContent = '10%';
+                    
+                    // 开始轮询任务状态
+                    pollTaskStatus();
+                } else {
+                    throw new Error(data.message || '上传失败');
+                }
+            })
+            .catch(error => {
+                showError(error.message);
+                uploadBtn.disabled = false;
+                progressContainer.classList.remove('active');
+            });
+        });
+        
+        // 轮询任务状态
+        function pollTaskStatus() {
+            if (!currentTaskId) return;
+            
+            fetch(`/task/${currentTaskId}`)
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || '获取任务状态失败');
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                // 更新进度
+                progressFill.style.width = `${data.progress}%`;
+                progressPercent.textContent = `${data.progress}%`;
+                
+                if (data.status === 'processing') {
+                    progressStatus.textContent = '正在处理...';
+                    // 继续轮询
+                    setTimeout(pollTaskStatus, 2000);
+                } else if (data.status === 'completed') {
+                    progressStatus.textContent = '处理完成';
+                    progressFill.style.width = '100%';
+                    progressPercent.textContent = '100%';
+                    
+                    // 显示下载按钮
+                    downloadUrl = data.download_url;
+                    resultContainer.classList.add('active');
+                    
+                    // 启用上传按钮
+                    uploadBtn.disabled = false;
+                } else if (data.status === 'failed') {
+                    showError(data.error || '处理失败');
+                    uploadBtn.disabled = false;
+                    progressContainer.classList.remove('active');
+                }
+            })
+            .catch(error => {
+                showError(error.message);
+                uploadBtn.disabled = false;
+                progressContainer.classList.remove('active');
+            });
+        }
+        
+        // 下载按钮点击处理
+        downloadBtn.addEventListener('click', () => {
+            if (downloadUrl) {
+                window.location.href = downloadUrl;
+            }
+        });
+        
+        // 显示错误信息
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorContainer.classList.add('active');
+        }
+    </script>
+</body>
+</html>

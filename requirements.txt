@@ -1,0 +1,6 @@
+flask==2.0.1
+flask-cors==3.0.10
+python-docx==0.8.11
+PyMuPDF==1.19.6
+reportlab==3.6.8
+requests==2.26.0 

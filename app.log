@@ -1,0 +1,312 @@
+2025-03-06 16:52:27,651 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:52:27] "GET / HTTP/1.1" 200 -
+2025-03-06 16:52:36,842 - __main__ - INFO - 正在处理文件: 文章.docx, 大小: 25027 字节
+2025-03-06 16:52:36,842 - __main__ - INFO - 选择的英语水平: 六级
+2025-03-06 16:52:36,844 - __main__ - INFO - 文件已保存到临时位置: /var/folders/__/215pc4zn34n2dkzymc3sm8900000gn/T/tmp_jgsy1g5.docx
+2025-03-06 16:52:36,844 - __main__ - INFO - 文件类型验证成功: docx
+2025-03-06 16:52:36,933 - __main__ - INFO - 成功提取文本，长度: 5630 字符
+2025-03-06 16:52:36,934 - __main__ - INFO - 开始识别难词...
+2025-03-06 16:53:01,116 - __main__ - INFO - 难词识别完成，找到 16 个难词
+2025-03-06 16:53:01,116 - __main__ - INFO - 开始生成导读...
+2025-03-06 16:53:14,450 - __main__ - INFO - 导读生成完成
+2025-03-06 16:53:14,450 - __main__ - INFO - 开始生成摘要和结构图...
+2025-03-06 16:53:44,652 - __main__ - WARNING - API调用失败 (尝试 1/3): HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out.
+2025-03-06 16:54:15,888 - __main__ - WARNING - API调用失败 (尝试 2/3): HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out.
+2025-03-06 16:54:48,173 - __main__ - WARNING - API调用失败 (尝试 3/3): HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out.
+2025-03-06 16:54:48,174 - __main__ - ERROR - API调用失败，已达到最大重试次数: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out.
+2025-03-06 16:54:48,174 - __main__ - ERROR - 生成摘要和结构图时出错: 与AI服务通信失败: HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out.
+2025-03-06 16:54:48,180 - __main__ - INFO - 摘要和结构图生成完成
+2025-03-06 16:54:48,180 - __main__ - INFO - 开始生成PDF...
+2025-03-06 16:54:48,241 - __main__ - INFO - PDF生成完成
+2025-03-06 16:54:48,242 - __main__ - INFO - 处理完成，返回PDF文件
+2025-03-06 16:54:48,242 - werkzeug - INFO - 127.0.0.1 - - [06/Mar/2025 16:54:48] "POST /process HTTP/1.1" 200 -
+2025-03-06 17:01:33,442 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:01:34,597 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:05:52,123 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:54490
+ * Running on http://10.198.222.43:54490
+2025-03-06 17:05:52,123 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 17:05:52,140 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:05:52,708 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:05:52,753 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:06:46,861 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:06:47,986 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:06:48,751 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:06:48,789 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:09:41,164 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:09:42,292 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:09:43,210 - __main__ - INFO - 正在启动应用...
+2025-03-06 17:09:43,212 - __main__ - INFO - 找到可用端口: 55418
+2025-03-06 17:09:43,212 - __main__ - INFO - 应用将在 http://127.0.0.1:55418 运行
+2025-03-06 17:09:43,224 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:09:43,288 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:09:56,927 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:09:58,047 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:09:58,740 - __main__ - INFO - 正在启动应用...
+2025-03-06 17:09:58,742 - __main__ - INFO - 找到可用端口: 55472
+2025-03-06 17:09:58,742 - __main__ - INFO - 应用将在 http://127.0.0.1:55472 运行
+2025-03-06 17:09:58,751 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:09:58,792 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:09:59,763 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:10:00,899 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:10:01,468 - __main__ - INFO - 正在启动应用...
+2025-03-06 17:10:01,469 - __main__ - INFO - 找到可用端口: 55484
+2025-03-06 17:10:01,469 - __main__ - INFO - 应用将在 http://127.0.0.1:55484 运行
+2025-03-06 17:10:01,475 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:10:01,514 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:11:44,205 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:11:45,371 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:11:46,313 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:11:46,359 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:11:51,980 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:11:53,096 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:11:53,745 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:11:53,784 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:11:55,085 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:11:56,209 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:11:56,769 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:11:56,806 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:13:04,731 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-06 17:13:05,870 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-06 17:13:06,789 - werkzeug - WARNING -  * Debugger is active!
+2025-03-06 17:13:06,845 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-06 17:14:28,778 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-03-06 17:14:28,778 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 22:01:21,582 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2025-03-08 22:01:21,583 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 22:04:19,197 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2025-03-08 22:04:19,198 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 22:04:19,232 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:04:19,775 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:04:19,821 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:05:52,821 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-08 22:05:53,948 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:05:54,659 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:05:54,698 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:06:02,250 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-08 22:06:03,379 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:06:03,941 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:06:03,982 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:06:28,613 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-08 22:06:29,739 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:06:30,480 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:06:30,517 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:06:53,764 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-03-08 22:06:53,764 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 22:06:53,777 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:06:54,331 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:06:54,368 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:06:58,696 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:06:58] "GET / HTTP/1.1" 200 -
+2025-03-08 22:07:12,677 - __main__ - INFO - 正在处理文件: 文章.docx, 大小: 25027 字节
+2025-03-08 22:07:12,678 - __main__ - INFO - 选择的英语水平: 四级
+2025-03-08 22:07:12,678 - __main__ - ERROR - 上传处理异常: name 'hashlib' is not defined
+2025-03-08 22:07:12,679 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:07:12] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-03-08 22:09:08,932 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-08 22:09:10,059 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:09:10,768 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:09:10,806 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:09:29,832 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:29] "GET / HTTP/1.1" 200 -
+2025-03-08 22:09:37,987 - __main__ - INFO - 正在处理文件: 文章.docx, 大小: 25027 字节
+2025-03-08 22:09:37,988 - __main__ - INFO - 选择的英语水平: 六级
+2025-03-08 22:09:37,990 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:37] "POST /upload HTTP/1.1" 200 -
+2025-03-08 22:09:37,996 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:37] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:38,080 - __main__ - INFO - 成功提取文本，长度: 5630 字符
+2025-03-08 22:09:38,080 - __main__ - INFO - 开始识别难词...
+2025-03-08 22:09:40,008 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:40] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:42,021 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:42] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:44,028 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:44] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:46,040 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:46] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:48,050 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:48] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:50,060 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:50] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:52,068 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:52] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:54,077 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:54] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:56,087 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:56] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:09:58,096 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:09:58] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:00,107 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:00] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:02,118 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:02] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:04,127 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:04] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:06,138 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:06] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:08,149 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:08] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:09,988 - __main__ - INFO - 难词识别完成，找到 15 个难词
+2025-03-08 22:10:09,989 - __main__ - INFO - 开始生成导读...
+2025-03-08 22:10:10,160 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:10] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:12,171 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:12] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:14,181 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:14] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:16,192 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:16] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:18,204 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:18] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:20,215 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:20] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:22,226 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:22] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:24,237 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:24] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:26,248 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:26] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:27,604 - __main__ - INFO - 导读生成完成
+2025-03-08 22:10:27,604 - __main__ - INFO - 开始生成摘要和结构图...
+2025-03-08 22:10:28,259 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:28] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:30,269 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:30] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:32,281 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:32] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:34,292 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:34] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:36,303 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:36] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:38,312 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:38] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:40,322 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:40] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:42,334 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:42] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:44,345 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:44] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:46,355 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:46] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:48,367 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:48] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:50,378 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:50] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:52,389 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:52] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:54,400 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:54] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:56,412 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:56] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:10:56,481 - __main__ - INFO - 摘要和结构图生成完成
+2025-03-08 22:10:56,482 - __main__ - INFO - 开始生成PDF...
+2025-03-08 22:10:56,490 - __main__ - WARNING - 未能加载中文字体，将使用默认字体
+2025-03-08 22:10:56,587 - __main__ - INFO - PDF已保存到: processed/文章_标注.pdf
+2025-03-08 22:10:58,421 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:10:58] "GET /task/45afc739-6178-49ef-bfa0-f08cfb99244c HTTP/1.1" 200 -
+2025-03-08 22:11:00,948 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:11:00] "GET /download/文章_标注.pdf HTTP/1.1" 200 -
+2025-03-08 22:15:04,430 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-08 22:15:05,596 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:15:06,461 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:15:06,505 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:15:12,808 - werkzeug - INFO -  * Detected change in '/Users/renyinxi/Documents/英语批注软件/main.py', reloading
+2025-03-08 22:15:13,922 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-03-08 22:15:14,610 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:15:14,651 - werkzeug - INFO -  * Debugger PIN: 733-303-131
+2025-03-08 22:15:24,647 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:24] "GET / HTTP/1.1" 200 -
+2025-03-08 22:15:50,575 - __main__ - INFO - 正在处理文件: 文章.docx, 大小: 25027 字节
+2025-03-08 22:15:50,580 - __main__ - INFO - 选择的英语水平: 六级
+2025-03-08 22:15:50,587 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:50] "POST /upload HTTP/1.1" 200 -
+2025-03-08 22:15:50,596 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:50] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:15:50,690 - __main__ - INFO - 成功提取文本，长度: 5630 字符
+2025-03-08 22:15:50,690 - __main__ - INFO - 开始识别难词...
+2025-03-08 22:15:52,605 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:52] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:15:54,616 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:54] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:15:56,624 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:56] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:15:58,632 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:15:58] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:00,645 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:00] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:02,653 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:02] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:04,662 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:04] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:06,669 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:06] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:08,681 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:08] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:10,689 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:10] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:12,698 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:12] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:14,447 - __main__ - INFO - 难词识别完成，找到 15 个难词
+2025-03-08 22:16:14,448 - __main__ - INFO - 开始生成导读...
+2025-03-08 22:16:14,707 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:14] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:16,717 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:16] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:18,727 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:18] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:20,735 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:20] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:22,743 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:22] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:24,753 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:24] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:26,484 - __main__ - INFO - 导读生成完成
+2025-03-08 22:16:26,485 - __main__ - INFO - 开始生成摘要和结构图...
+2025-03-08 22:16:26,761 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:26] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:28,772 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:28] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:30,781 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:30] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:32,789 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:32] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:34,796 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:34] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:36,803 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:36] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:38,813 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:38] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:40,823 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:40] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:42,829 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:42] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:44,838 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:44] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:45,832 - __main__ - INFO - 摘要和结构图生成完成
+2025-03-08 22:16:45,832 - __main__ - INFO - 开始生成PDF...
+2025-03-08 22:16:45,848 - __main__ - WARNING - 使用内置中文字体 STSong-Light
+2025-03-08 22:16:45,993 - __main__ - INFO - PDF已保存到: processed/文章_标注.pdf
+2025-03-08 22:16:46,846 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:46] "GET /task/c72f689e-ed19-47e8-b226-a832dbbb5ad8 HTTP/1.1" 200 -
+2025-03-08 22:16:49,233 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:16:49] "GET /download/文章_标注.pdf HTTP/1.1" 200 -
+2025-09-06 15:05:04,239 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-09-06 15:05:04,240 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 15:05:04,413 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-09-06 15:05:04,826 - werkzeug - WARNING -  * Debugger is active!
+2025-09-06 15:05:05,015 - werkzeug - INFO -  * Debugger PIN: 968-762-842
+2025-09-06 15:05:10,557 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:05:10] "GET / HTTP/1.1" 200 -
+2025-09-06 15:05:12,030 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:05:12] "[33mGET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__2facdf06_94ab_4bec_bd8a_a0d378d6d543__0 HTTP/1.1[0m" 404 -
+2025-09-06 15:05:12,034 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:05:12] "[33mGET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__96c5d865_1a21_4f94_9172_25601114dcf9__1 HTTP/1.1[0m" 404 -
+2025-09-06 15:05:32,068 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:05:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-06 15:07:05,718 - __main__ - INFO - 正在处理文件: 文章分析_任印玺.docx, 大小: 20881 字节
+2025-09-06 15:07:05,722 - __main__ - INFO - 选择的英语水平: 初级
+2025-09-06 15:07:05,731 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:05] "POST /upload HTTP/1.1" 200 -
+2025-09-06 15:07:05,736 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:05] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:05,790 - __main__ - INFO - 成功提取文本，长度: 6064 字符
+2025-09-06 15:07:05,790 - __main__ - INFO - 开始识别难词...
+2025-09-06 15:07:07,743 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:07] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:09,757 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:09] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:11,766 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:11] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:13,774 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:13] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:15,781 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:15] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:17,789 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:17] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:19,803 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:19] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:21,825 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:21] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:23,838 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:23] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:26,190 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:26] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:28,199 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:28] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:30,209 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:30] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:32,217 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:32] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:34,227 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:34] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:34,275 - __main__ - INFO - 难词识别完成，找到 20 个难词
+2025-09-06 15:07:34,275 - __main__ - INFO - 开始生成导读...
+2025-09-06 15:07:36,234 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:36] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:38,242 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:38] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:40,249 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:40] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:41,849 - __main__ - INFO - 导读生成完成
+2025-09-06 15:07:41,849 - __main__ - INFO - 开始生成摘要和结构图...
+2025-09-06 15:07:42,258 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:42] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:44,266 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:44] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:46,275 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:46] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:48,282 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:48] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:50,292 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:50] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:52,314 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:52] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:54,326 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:54] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:55,404 - __main__ - INFO - 摘要和结构图生成完成
+2025-09-06 15:07:55,404 - __main__ - INFO - 开始生成PDF...
+2025-09-06 15:07:55,416 - __main__ - WARNING - 使用内置中文字体 STSong-Light
+2025-09-06 15:07:55,492 - __main__ - INFO - PDF已保存到: processed/文章分析_任印玺_标注.pdf
+2025-09-06 15:07:56,519 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:56] "GET /task/a9f2fa2c-030d-487b-bd71-1e3104cda17e HTTP/1.1" 200 -
+2025-09-06 15:07:58,809 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:07:58] "GET /download/文章分析_任印玺_标注.pdf HTTP/1.1" 200 -
+2025-09-06 15:12:56,220 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-09-06 15:12:56,222 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-06 15:12:56,422 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-09-06 15:12:56,850 - werkzeug - WARNING -  * Debugger is active!
+2025-09-06 15:12:57,035 - werkzeug - INFO -  * Debugger PIN: 968-762-842
+2025-09-06 15:12:58,717 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:12:58] "GET / HTTP/1.1" 200 -
+2025-09-06 15:12:59,103 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:12:59] "[33mGET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__e77728c3_aef6_4350_8ef4_72d744a826bb__0 HTTP/1.1[0m" 404 -
+2025-09-06 15:12:59,106 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:12:59] "[33mGET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__a147bda2_b582_4b9a_914a_70b7df5da301__1 HTTP/1.1[0m" 404 -
+2025-09-06 15:13:13,550 - __main__ - INFO - 正在处理文件: 文章分析_任印玺.docx, 大小: 20881 字节
+2025-09-06 15:13:13,552 - __main__ - INFO - 选择的英语水平: 六级
+2025-09-06 15:13:13,554 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:13] "POST /upload HTTP/1.1" 200 -
+2025-09-06 15:13:13,562 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:13] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:13,601 - __main__ - INFO - 成功提取文本，长度: 6064 字符
+2025-09-06 15:13:13,601 - __main__ - INFO - 开始识别难词...
+2025-09-06 15:13:15,573 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:15] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:17,580 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:17] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:19,588 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:19] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:21,595 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:21] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:24,177 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:24] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:27,165 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:27] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:30,165 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:30] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:31,921 - __main__ - INFO - 难词识别完成，找到 11 个难词
+2025-09-06 15:13:31,922 - __main__ - INFO - 开始生成导读...
+2025-09-06 15:13:33,167 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:33] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:36,167 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:36] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:39,157 - __main__ - INFO - 导读生成完成
+2025-09-06 15:13:39,158 - __main__ - INFO - 开始生成摘要和结构图...
+2025-09-06 15:13:39,164 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:39] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:41,174 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:41] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:43,182 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:43] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:45,190 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:45] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:47,198 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:47] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:49,205 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:49] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:51,212 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:51] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:53,221 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:53] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 15:13:54,082 - __main__ - INFO - 摘要和结构图生成完成
+2025-09-06 15:13:54,083 - __main__ - INFO - 开始生成PDF...
+2025-09-06 15:13:54,093 - __main__ - WARNING - 使用内置中文字体 STSong-Light
+2025-09-06 15:13:54,159 - __main__ - INFO - PDF已保存到: processed/文章分析_任印玺_标注.pdf
+2025-09-06 15:13:55,229 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 15:13:55] "GET /task/6d7c3d8f-f0db-47b3-8bb6-7f76b8b00110 HTTP/1.1" 200 -
+2025-09-06 16:22:33,625 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 16:22:33] "[33mGET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__dec7a068_212a_406f_a9a2_204548c7a5f7__0 HTTP/1.1[0m" 404 -
+2025-09-06 16:22:33,627 - werkzeug - INFO - 127.0.0.1 - - [06/Sep/2025 16:22:33] "[33mGET /hybridaction/zybTrackerStatisticsAction?data=%7B%7D&__callback__=__cb__zybTrackerStatisticsAction__cd1bbdc8_669c_44ed_a1ba_af9b9ea6e323__1 HTTP/1.1[0m" 404 -
